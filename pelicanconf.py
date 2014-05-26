@@ -32,3 +32,5 @@ DEFAULT_PAGINATION = 5
 
 STATIC_PATHS = ['css', 'images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+
+GOOGLE_ANALYTICS = "UA-51361525-1"
