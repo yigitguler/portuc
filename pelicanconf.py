@@ -35,3 +35,4 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 GOOGLE_ANALYTICS = "UA-51361525-1"
 TWITTER_USERNAME = "hyigitguler"
+DISQUS_SITENAME = "portuc"
