@@ -1,0 +1,37 @@
+{
+  "name": "html-base",
+  "version": "0.0.0",
+  "description": "Scaffold for the HTML templates and other projects. Initial folder structure with Gruntfile and tooling prepared for development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://Prelc@bitbucket.org/primozcigler/html-base.git"
+  },
+  "author": "ProteusNet",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-autoprefixer": "~0.5.0",
+    "assemble": "~0.4.33",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-usemin": "~2.0.2",
+    "grunt-concurrent": "~0.4.2",
+    "grunt-newer": "~0.6.0",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-rev": "~0.1.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "load-grunt-tasks": "~0.4.0",
+    "pretty": "^0.1.2",
+    "grunt-contrib-imagemin": "git://github.com/gruntjs/grunt-contrib-imagemin"
+  },
+  "dependencies": {
+    "grunt-contrib-copy": "^0.5.0"
+  }
+}

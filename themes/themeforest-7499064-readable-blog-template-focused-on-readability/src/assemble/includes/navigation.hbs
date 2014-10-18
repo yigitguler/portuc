@@ -1,0 +1,80 @@
+---
+items:
+  - link: index.html
+    name: Home
+    activeFor:
+    - index
+    - home-slider
+    - home-multi-columns
+    - home-ads
+    - home-no-sidebar
+    - home-full-width
+    subitems:
+    - link: index.html
+      name: Home (Sidebar)
+    - link: home-slider.html
+      name: Home (Slider)
+    - link: home-multi-columns.html
+      name: Home (Multi Columns)
+    - link: home-ads.html
+      name: Home (With Ads)
+    - link: home-no-sidebar.html
+      name: Home (No Sidebar)
+    - link: home-full-width.html
+      name: Home (Full Width)
+  - link: single-post.html
+    name: Post formats
+    activeFor:
+    - single-post
+    - single-post-without-image
+    - single-post-video
+    - single-post-full-width
+    - search-results
+    subitems:
+    - link: single-post.html
+      name: Single Post
+    - link: single-post-without-image.html
+      name: Single Post (No Image)
+    - link: single-post-video.html
+      name: Single Post (Video)
+    - link: single-post-full-width.html
+      name: Single Post (Full Width Image)
+    - link: search-results.html
+      name: Search Results
+  - link: elements.html
+    name: Elements
+    activeFor:
+    - elements
+  - link: features.html
+    name: Features
+    activeFor:
+    - features
+  - link: about-us.html
+    name: About
+    activeFor:
+    - about-us
+  - link: contact.html
+    name: Contact
+    activeFor:
+    - contact
+---
+<nav class="navbar  navbar-default" role="navigation">
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse  navbar-collapse" id="readable-navbar-collapse">
+    <ul class="navigation">
+      {{#each navigation.items}}
+      {{!-- {{log ../page.basename}} --}}
+      <li class="{{#if subitems}}dropdown{{/if}}{{#if activeFor}}{{#inArray activeFor ../../page.basename}}  active{{/inArray}}{{/if}}">
+        <a href="{{link}}" class="dropdown-toggle" data-toggle="dropdown">{{name}}</a>
+        {{#if subitems}}
+        <ul class="navigation__dropdown">
+          {{#each subitems}}
+          <li><a href="{{link}}">{{name}}</a></li>
+          {{/each}}
+        </ul>
+        {{/if}}
+      </li>
+      {{/each}}
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>

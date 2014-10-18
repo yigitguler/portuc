@@ -1,0 +1,40 @@
+{{> head}}
+{{> header}}
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12  col-md-8">
+      {{> post-sticky--ads}}
+      {{> post-ads}}
+      {{> post-with-video}}
+      {{> post-ads}}
+      {{> post-with-featured-image}}
+      {{> post-with-quote}}
+      {{> post-without-featured-image}}
+    </div>
+    <div class="col-xs-12  col-md-4">
+      {{#withFirst db.authors_left}}
+        {{> widget-author}}
+      {{/withFirst}}
+      <div class="sidebar  boxed  push-down-30">
+        <div class="row">
+          <div class="col-xs-10  col-xs-offset-1">
+            {{> widget-banner}}
+            {{> widget-categories}}
+            {{> widget-featured-post}}
+            {{> widget-facebook}}
+            {{> widget-posts}}
+            {{> widget-tags}}
+            {{> widget-twitter}}
+            {{> widget-recent-comments}}
+            {{> widget-social-icons}}
+          </div>
+        </div>
+      </div>
+      <div class="post-ads">
+        <a href="http://themeforest.net/user/ProteusThemes/portfolio?ref=ProteusThemes"><img src="images/dummy/ads-160x600.jpg" alt="Ads" width="160" height="600"></a>
+      </div>
+    </div>
+  </div>
+</div>
+{{> footer}}
+{{> foot}}

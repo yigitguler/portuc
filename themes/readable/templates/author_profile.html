@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Yigit{% endblock %}
+
+{% block container %}
+      <div class="row">
+        <div class="col-xs-10  col-xs-offset-1">
+
+          <!-- Widget author -->
+          <div class="widget-author  boxed  push-down-30">
+            <div class="widget-author__image-container">
+             <div class="widget-author__avatar--blurred">
+              <img class="bg_image" src="{{ STATIC_URL }}images/about/background.jpg" alt="About Us image">
+             </div>
+            <img class="widget-author__avatar" src="{{STATIC_URL}}images/about/yigit_avatar.jpg" alt="Avatar image">
+            </div>
+            <div class="row">
+              <div class="col-xs-10  col-xs-offset-1">
+                <div class="widget-author__content">
+                    {{ page.content }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-us">
+            <div class="row">
+              <div class="col-xs-12  col-sm-6">
+              </div>
+              <div class="col-xs-12  col-sm-6">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock %}

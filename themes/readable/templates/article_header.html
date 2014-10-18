@@ -1,0 +1,44 @@
+            <!-- Featured image and meta start -->
+            {% if article.image %}
+            <div class="meta">
+              <div style="max-height: 324px; overflow: hidden;">
+                <img class="wp-post-image" src="{{ article.image }}" alt="Blog image" width="748">
+              </div>
+              <div class="meta__container">
+                <div class="row">
+                  <div class="col-xs-12  col-sm-8">
+                    {% include "article_info.html" %}
+                  </div>
+                  <div class="col-xs-12  col-sm-4">
+                    <div class="meta__comments">
+                      <span class="glyphicon glyphicon-comment"></span>  &nbsp;
+                      <a href="single-post.html#disqus_thread"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% else %}
+            <div class="meta">
+              <div class="row">
+                <div class="col-xs-12  col-sm-10  col-sm-offset-1">
+                  <div class="meta__container--without-image">
+                    <div class="row">
+                      <div class="col-xs-12  col-sm-8">
+                          {% include "article_info.html" %}
+                      </div>
+                      <div class="col-xs-12  col-sm-4">
+                        <div class="meta__comments">
+                          <span class="glyphicon glyphicon-comment"></span>  &nbsp;
+                          <a href="single-post-without-image.html#disqus_thread"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {% endif %}
+
+            <!-- Featured image and meta end -->

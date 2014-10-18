@@ -1,0 +1,24 @@
+{
+  "name": "html-base",
+  "version": "0.0.0",
+  "authors": [
+    "Primoz Cigler <primoz@proteusnet.com>",
+    "Marko Prelec <marko.prelec@proteusnet.com>"
+  ],
+  "description": "base for html templates",
+  "main": "src/index.html",
+  "keywords": [
+    "html"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.proteusnet.com/",
+  "devDependencies": {
+    "requirejs": "~2.1.9",
+    "sass-bootstrap": "~3.0.2",
+    "almond": "~0.2.7"
+  },
+  "dependencies": {
+    "jquery-smart-vimeo-embed": "~1.1.1",
+    "underscore": "~1.6.0"
+  }
+}

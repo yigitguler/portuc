@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Documentations for the Readable HTML Template">
+  <meta name="author" content="ProteusThemes">
+
+  <title>Readable HTML Template Documentation</title>
+
+  <!-- CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="images/favicon.png">
+
+</head>
+<body data-spy="scroll" data-target=".navbar">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="navbar-brand">Readable HTML Documentation</span>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#top">Top</a>
+          </li>
+          <li>
+            <a href="#scaffolding">Scaffolding</a>
+          </li>
+          <li>
+            <a href="#javascripts">Javascript</a>
+          </li>
+          <!-- <li>
+            <a href="#contact-form">PHP Contact Form</a>
+          </li> -->
+          <li>
+            <a href="#misc">Miscellaneous</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" id="top">
+      <h1>Readable HTML Template Documentation</h1>
+      <p class="lead">
+        By <a href="http://www.proteusthemes.com/">ProteusThemes</a>
+      </p>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <ul>
+            <li>
+              Author: <a href="http://www.proteusthemes.com/">ProteusThemes</a>
+            </li>
+            <li>
+              Support: <a href="http://support.proteusthemes.com">ProteusThemes Support</a>
+            </li>
+            <li>
+              Template on ThemeForest: <a href="http://themeforest.net/item/readable-blog-template-focused-on-readability/7499064?ref=ProteusThemes">Readable - HTML Template</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <ul>
+            <li>
+              Version: 1.1.0
+            </li>
+            <li>
+              Created: 2014-04-16
+            </li>
+            <li>
+              Last modified: 2014-04-28
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        <img src="images/readable.jpg" alt="" class="img-thumbnail" width="1493" height="840" />
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+
+        <section id="general">
+          <div class="page-header">
+            <h1>General</h1>
+          </div>
+
+          <p>
+            Thank you for purchasing the Readable HTML template crafted by <a href="www.proteusthemes.com">ProteusThemes</a>.
+          </p>
+
+          <p>
+            Below you will find the documentation how to use the template.
+          </p>
+
+        </section>
+
+        <hr />
+
+        <section id="scaffolding">
+          <div class="page-header">
+            <h1>Scaffolding</h1>
+          </div>
+
+          <h3>Build on top of Twitter Bootstrap 3.0</h3>
+          <p>
+          The Readable HTML template is build on top of SASS Twitter Boostrap HTML framework, using modern tools like Grunt, Bower and npm. All the components of the Bootstrap framework were left as they are during the development, so the template is upgrade-safe.
+          </p>
+
+          <p>
+            Find the documentation for Twitter Boostrap <a href="http://getbootstrap.com/">HERE</a>.
+          </p>
+          <p class="alert alert-info">
+            You are allowed to use any component in your themes available in Twitter Bootstrap. However, for the performance reasons some of the components were commented out in the <code>src/sass/main.scss</code>
+            file. Uncomment the components you need in your project and recompile the project using <code>$ grunt</code> or <code>$ grunt build</code> when you cd to the root of the template in terminal.
+          </p>
+
+          <h3>Tools used</h3>
+
+          <ul>
+            <!-- <li>
+              <b>FREE BONUS: <a href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848?ref=ProteusThemes">Slider Revolution</a></b> - find the documentation for the slider <a href="slider-revolution/documentation.html">HERE</a>
+            </li> -->
+            <li>
+              <a href="http://jquery.com/">Grunt</a> with the following tasks:
+              <ul>
+                <li>matchdep - just loads the dependencies listed in the package.json file.</li>
+                <li>watch + liverealod - watch the file, run the task when the files change and trigger the autoreload in the browser.</li>
+                <li>compass - used for compiling the SCSS/SASS files to CSS.</li>
+                <li>autoprefixer - the up-to-date smart prefixing utility. No need to write the prefixed CSS3 properties.</li>
+                <li>assemble - solves the nightmare of the static HTML files. Simple templating engine using HandlebarsJS. With partials, data, helpers etc.</li>
+                <li>imagemin - losselessly optimizes the images for the production.</li>
+                <li>newer - speeds up the building process by running tasks only on the files that actually changed.</li>
+                <li>concurrent - used when multiple blocking watch tasks run at the same time. For watch and compass.</li>
+                <li>usemin with:
+                  <ul>
+                    <li>concat - concatenates multiple JS/CSS files into a single file.</li>
+                    <li>cssmin - minifies the CSS files.</li>
+                    <li>rev - prepends the hash to the files for caching bust.</li>
+                  </ul>
+                </li>
+                <li>requirejs with almond for build/ and minified using UglifyJS2 - loads the AMD modules, optimizes them (concatenating, minifying), concatenates and saves the output.</li>
+                <li>clean - cleans the directories, we love to have everything tidy.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="http://handlebarsjs.com/">Handlebars.js</a> - JavaScript templating engine, used together with <em>assemble</em> Grunt task
+            </li>
+            <li>
+              <a href="http://jquery.com/">jQuery</a> - JS library
+            </li>
+            <li>
+              <a href="http://jquery.com/">Bootstrap JS</a> - JS functions for Twitter Bootstrap
+            </li>
+<!--             <li>
+              <a href="http://isotope.metafizzy.co/">Isotope</a> - Plugin for magical layouts
+            </li> -->
+            <li>
+              <a href="http://underscorejs.org/">Underscore.js</a> - Library of JS helper functions
+            </li>
+<!--             <li>
+              <a href="http://jqueryui.com/">jQuery UI for price range slider/filter</a>
+            </li>
+ -->          </ul>
+
+          <h4>Using Grunt (optional)</h4>
+
+          <p>Readable is build with the advanced tools for the frontend development. Grunt is a JavaScript task runner. The Gruntfile.js comes with the theme, so one can optimize all the files and code with little to no effort.</p>
+          <p>If you want to edit the HTML files directly, you can edit the build sources in the <code>build</code> directory or more <em>loosy</em> HTML files in the <code>src</code> directory. However, if you are familiar with the Grunt and Bower, you can just run the following commands in the terminal to start using the prepared Gruntfile:</p>
+          <pre>
+$ cd &lt;the-directory-of-readable&gt;
+$ npm install
+$ bower install
+          </pre>
+          <p>That should install all the dependencies in the folders <code>node_modules</code> and <code>src/bower_components</code>. For the development work you can then just run:</p>
+          <pre>$ grunt</pre>
+          <p>It has live reload as well, just enable it in the Chrome Extensions. For building the sources to the highly-optimized code, run in terminal:</p>
+          <pre>$ grunt build</pre>
+          <p>That will export all the sources to the folder <code>build</code> which is then ready for production.</p>
+
+          <h3>Google Fonts</h3>
+          <p>
+            There are three custom fonts from Google Fonts used in the Readable HTML template:
+          </p>
+
+          <ul>
+            <li>
+              <a href="http://en.wikipedia.org/wiki/Georgia_(typeface)">Georgia</a> - for the content
+            </li>
+            <li>
+              <a href="http://www.google.com/webfonts#UsePlace:use/Collection:Open+Sans">Open Sans</a> - for the headings
+            </li>
+            <li>
+              <a href="http://www.google.com/fonts#UsePlace:use/Collection:Lato">Lato</a> - for meta and smaller text
+            </li>
+          </ul>
+
+          <h3>Icon Fonts</h3>
+          <p>
+            There are two icons fonts used for maximum quality of the icons in the Readable:
+          </p>
+          <ul>
+            <li>
+              <a href="http://glyphicons.com/">Glyphicons</a> - halfling icons
+            </li>
+            <li>
+              <a href="http://www.smcllns.com/designing-a-css3-button-set/">Zocial</a> - social icons
+            </li>
+          </ul>
+
+          <!--  ==========  -->
+          <!--  = PSDs =  -->
+          <!--  ==========  -->
+          <h3>Source design PSD files</h3>
+          <p>
+            You will find one PSD file in the folder <code>
+            extras/PSDs</code>. There are master layers for the individual page layouts.
+          </p>
+
+          <h3>Images used for template preview</h3>
+
+          <p>
+            The images available for template preview aren't included in the HTML template, because of the licenses, but you can buy them at depositphotos.com:
+          </p>
+          <ul>
+            <li><a target="_blank" href="http://depositphotos.com/portfolio-1008939.html">http://depositphotos.com/portfolio-1008939.html</a> - All our pictures are from same author: olly18</li>
+          </ul>
+
+          We also used avatar pictures which can be find at <a target="_blank" href="http://uifaces.com/authorized">http://uifaces.com/authorized</a>
+
+        </section>
+
+        <hr />
+
+        <section id="javascripts">
+          <div class="page-header">
+            <h1>JavaScript</h1>
+          </div>
+
+          <h3>Twitter Feed</h3>
+          <p>
+            In the blog pages you will find the Twitter Feed in the sidebar. This is in fact the embedded timeline from the Twitter. To get it for your page, go to the <a href="https://twitter.com/settings/widgets">Twitter Widgets</a> and create a new widget for your site, grab the HTML code and paste it in the template.
+          </p>
+
+        <h3>Bootstrap JS</h3>
+        <p>
+          The documentation for all the other Bootstrap's JavaScript components can be found <a href="http://getbootstrap.com/javascript/">here</a>.
+        </p>
+      </section>
+      <hr />
+      <!-- <section id="contact-form">
+        <div class="page-header">
+          <h1>PHP Contact Form</h1>
+        </div>
+        <p>
+          The working contact form has been added to the Readable template in version v1.1.
+        </p>
+        <p>
+          The form is written in PHP and can be found in <code>./contact.php</code>. Be sure that your server supports PHP and has all the required settings for build-in <code> mail()</code> PHP function.
+        </p>
+        <p>
+          All you need to do to enable the PHP form is to point the user to the <code>
+          contact.php</code>
+          instead of <code>
+          contact.html</code>
+          and change the following variable in the <code>
+          ./incl/send-email.php</code>
+          to your actual email address:
+        </p>
+        <pre>&lt;?php
+
+          /* set the email of the recipient (your email) */
+          $recipient = &quot;your.email@example.com&quot;;</pre>
+
+
+          <p>
+            The message will be sent directly from your website to the email address you have specified above and will have the following form:
+          </p>
+          <pre>----- Info about the sender -----
+
+            Name: [name]
+            Email: [email]
+            Website: [website]
+
+
+            ----- Message -----
+
+            [the actual message from the user which sent the email]</pre>
+          </section>
+          <hr /> -->
+          <section id="misc">
+            <div class="page-header">
+              <h1>Miscellaneous</h1>
+            </div>
+
+            <h3>Custom Changes</h3>
+            <p>
+              If you need advanced cusomizations on the theme, we are available for that as well.
+            </p>
+            <p>
+              Just let us know your needs to: <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#112;&#114;&#111;&#116;&#101;&#117;&#115;&#116;&#104;&#101;&#109;&#101;&#115;&#046;&#099;&#111;&#109;">&#105;&#110;&#102;&#111;&#064;&#112;&#114;&#111;&#116;&#101;&#117;&#115;&#116;&#104;&#101;&#109;&#101;&#115;&#046;&#099;&#111;&#109;</a>
+            </p>
+            <p>
+              For your general orientation: <a href="http://www.proteusthemes.com/pt-pricelist.pdf">our pricelist</a>.
+            </p>
+            <h3>Changelog</h3>
+            <p>Changelog of the theme is available on <a href="http://themeforest.net/item/readable-blog-template-focused-on-readability/7499064?ref=ProteusThemes">ThemeForest website</a>.</p>
+          </section>
+          <hr />
+          <footer class="well">
+            <p>Created by <a href="https://twitter.com/JakaSmid">Jaka Šmid</a> (designer), <a href="http://twitter.com/Prelc">Marko Prelec</a> (frontend developer) and <a href="https://twitter.com/primozcigler">Primož Cigler</a> (CTO), <a href="http://www.proteusthemes.com/">ProteusThemes</a>, <a href="http://www.proteusnet.com/">ProteusNet d.o.o. company</a></p>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+  </html>

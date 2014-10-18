@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title|striptags }}{% endblock %}
+{% block container_classes %}col-xs-10  col-xs-offset-1  col-md-8  col-md-offset-2  push-down-60{% endblock %}
+{% block container %}
+    <div class="container">
+      <div class="boxed  push-down-60">
+
+        {% include "article_header.html" %}
+        <!-- Start of the blogpost -->
+        <div class="row">
+          <div class="col-xs-10  col-xs-offset-1  col-md-8  col-md-offset-2  push-down-60">
+
+            <!-- Start of the content -->
+            <div class="post-content">
+            <h1 class="entry-title">
+                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title}}</a>
+            </h1>
+              <h3>{{ article.blurb }}</h3>
+                {{ article.content }}
+
+              <!--<blockquote>-->
+                <!--“If we could sell our experiences for what they cost us, we’d all be millionaires.” - Abigail Van Buren-->
+              <!--</blockquote>-->
+              <!--<blockquote class="blockquote__alternative">-->
+                <!--If we could sell our experiences for what they cost us, we’d all be millionaires.-->
+                <!--<p>-->
+                  <!--<br>- Abigail Van Buren</p>-->
+              <!--</blockquote>-->
+            </div>
+
+            <!-- End of the content -->
+            <div class="row">
+              <div class="col-xs-12  col-sm-6">
+
+                <!-- Start of comments button -->
+                <div class="post-comments">
+                  <a class="btn  btn-primary" href="{{ article.url }}#disqus_thread"></a>
+                </div>
+
+                <!-- End of comments button -->
+              </div>
+              <div class="col-xs-12  col-sm-6">
+
+                <!-- Start of social icons -->
+                <!--<div class="social-icons">-->
+                  <!--<a href="#" class="social-icons__container"> <span class="zocial-facebook"></span>  </a>-->
+                  <!--<a href="#" class="social-icons__container"> <span class="zocial-twitter"></span>  </a>-->
+                  <!--<a href="#" class="social-icons__container"> <span class="zocial-email"></span>  </a>-->
+                <!--</div>-->
+
+                <!-- End of social icons -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12  col-sm-6">
+
+                <!-- Start of post author -->
+                <div class="post-author">
+                  <h6>Yazar</h6>
+                  <hr>
+                  <img src="{{STATIC_URL}}images/about/yigit_avatar.jpg" alt="Yazar" width="90px">
+                  <h5>
+                    <a href="/pages/yigit.html">{{ AUTHOR }}</a>
+                  </h5>
+                  <span class="post-author__text">Python ve Django sever. Yelkenci.</span>
+                </div>
+
+                <!-- End of post author -->
+              </div>
+              <div class="col-xs-12  col-sm-6">
+
+                <!-- Start of post tags -->
+                <!-- End of post tags -->
+              </div>
+            </div>
+            <div class="disqus-comments  push-down-45" id="comments">
+
+              <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    var disqus_shortname = 'portuc'; // required: replace example with your forum shortname
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- End of the blogpost -->
+      </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alet, edevat ve bilimum fikirlerin saklanması için kullanılan blog.">
+    <link rel="shortcut icon" href="/theme/images/favicon.png">
+    <title>Portuç - Articles by H. Yiğit Güler</title>
+
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" href="/theme/stylesheets/0a6f4577.0a6f4577.main.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+
+    <!-- Google Fonts -->
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: {
+          families: ['Open+Sans:300,400,700:latin', 'Lato:700,900:latin']
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header  push-down-45">
+      <div class="container">
+        <div class="logo  pull-left">
+          <a href="/">
+            <img src="/theme/images/logo.png" alt="Logo" width="352" height="140">
+          </a>
+        </div>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#readable-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+          </button>
+        </div>
+        <nav class="navbar  navbar-default" role="navigation">
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse  navbar-collapse" id="readable-navbar-collapse">
+            <ul class="navigation">
+                    <li><a href="/pages/yigit.html" class="dropdown-toggle" data-toggle="dropdown">Hakkında</a> </li>
+                    <li><a href="/category/yazilim.html" class="dropdown-toggle" data-toggle="dropdown">Yazılım</a> </li>
+
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </nav>
+        <div class="hidden-xs  hidden-sm">
+          <a href="https://twitter.com/HYigitGuler" class="search__container  js--toggle-search-mode"> <span class="zocial-twitter"></span>  </a>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8  col-xs-offset-2">
+           <div class="boxed  push-down-45">
+
+            <!-- Featured image and meta start -->
+            <div class="meta">
+              <div style="max-height: 324px; overflow: hidden;">
+                <img class="wp-post-image" src="/images/mitmproxy/3.PNG" alt="Blog image" width="748">
+              </div>
+              <div class="meta__container">
+                <div class="row">
+                  <div class="col-xs-12  col-sm-8">
+<div class="meta__info">
+  <span class="meta__author"><img src="images/about/yigit_avatar.jpg" alt="Meta avatar" width="30" height="30"> <a href="/pages/yigit.html">H. Yiğit Güler</a>  in <a href="/category/yazilim.html">Yazılım</a> </span>
+  <span class="meta__date"><span class="glyphicon glyphicon-calendar"></span>  &nbsp; Mon 09 June 2014</span>
+</div>                  </div>
+                  <div class="col-xs-12  col-sm-4">
+                    <div class="meta__comments">
+                      <span class="glyphicon glyphicon-comment"></span>  &nbsp;
+                      <a href="single-post.html#disqus_thread"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured image and meta end -->
+            <!-- Start of the blogpost -->
+            <div class="row">
+              <div class="col-xs-10  col-xs-offset-1">
+
+                <!-- Start of the content -->
+                <div class="post-content--front-page">
+                  <h2 class="front-page-title">
+                    <a href="/mitmproxy.html">Mitmproxy ile kolayca hata yakalama</a>
+                  </h2>
+                  <h3>API tamamlandı fakat kaynağı belli olmayan bir bug var. Şimdi ne yapmak lazım?</h3>
+                    <p>API yapmak gerçekten çok keyifli bir iş.
+Özellikle aylar süren çalışmayla ortaya çıkan uygulamanın ilk sürümünü kurcalamak çok keyifli oluyor.
+Kafanızda kurduğunuz veri yapıları, endpointler, hepsi bir anda somut bir nesneye dönüşüyor...</p>
+<p>Ancak...</p>
+<p><em>"Uygulama son güncellemeden sonra <strong>bazen</strong> mesaj göndermez oldu..."</em></p>
+<p><em>"Kullanıcı resimleri gözükmüyor..."</em></p>
+<p><em>"Yapılan değişiklikler kayıt edilmiyor..."</em></p>
+<p>gibi şikayetler kısa süre sonra kabus halini alıyor.</p>
+<p>Çünkü çoğu zaman sorunun API'dan mı yoksa istemci tarafından mı kaynaklandığı anlaşılamıyor.</p>
+<p>Endpoint'i curl veya <a href="http://www.getpostman.com/">Postman</a> ile denediğinizde her şey yolunda gözüküyor.
+Telefonu elinize alıp denediğinizde ise hatayla karşılaşıyorsunuz.</p>
+<p>Haydi bakalım... Uygulamayı simülatörde açıp kendi lokal sunucunuza yönlendirip istekleri gözetleme olanağınız olsa da hem zahmetli,
+hem de -gerçek kullanıcı verisi ile çalışılamadığından- bazı durumlarda çalışmıyor.</p>
+<p>"Keşke iPhone ile sunucu arasında gidip gelen istekleri gözetleyebilseydik" dediğim birçok an olmuştu.
+Sonunda bir gün <a href="http://mitmproxy.org/">mitmproxy</a> ile bu kabuslar geride kaldı.</p>
+<h1>Mitmproxy ne yapıyor?</h1>
+<p>Mitmproxy <em>debugging proxy</em> adı verilen programlar ailesinin başarılı bir üyesi.
+Çalışma mantığı kısaca şöyle <strong>(Telefon ve bilgisayar aynı ağda olmak zorunda)</strong>:</p>
+<ul>
+<li>Bilgisayarımıza mitmproxy kuruyor ve çalıştırıyoruz::</li>
+</ul>
+<div class="highlight"><pre>    <span class="n">pip</span> <span class="n">install</span> <span class="n">mitmproxy</span>
+    <span class="n">mitmproxy</span>
+</pre></div>
+
+
+<ul>
+<li>Telefonumuza proxy adresi olarak bilgisayarımızın network ip adresini veriyoruz.</li>
+</ul>
+<p><center><img src="images/mitmproxy/1.PNG" alt="Mitmproxy"/></center></p>
+<ul>
+<li>Telefonumuzdan <strong>mitm.it</strong> adresine girerek güvenlik sertifikasını yüklüyoruz.</li>
+</ul>
+<p><center><img src="images/mitmproxy/2.PNG" alt="Mitmproxy"/></center></p>
+<ul>
+<li>Artık telefonumuzun yaptığı tüm http isteklerini ve sunucudan gelen cevapları bilgisayarımızdan gözetleyebiliyoruz.
+ İstek hakkında detaylı bilgiye ENTER ve TAB tuşlarıyla ulaşabiliyoruz.</li>
+</ul>
+<p><center><img src="images/mitmproxy/3.PNG" alt="Mitmproxy"/></center></p>
+<p>Hepsi bu kadar!</p>
+<p>Bundan sonra uygulama ne istiyor, sunucu ne yolluyor, hepsi elimizin altında.
+Hata sunucu tarafındaysa hemen düzeltiyor, istemcide ise ticket'ı ilgili arkadaşa yönlendiriyor ve bir çay koyuyoruz.</p>
+                </div>
+
+                <!-- End of the content -->
+                <a href="/mitmproxy.html">
+                  <div class="read-more">
+                    Continue reading
+                    <div class="read-more__arrow">
+                      <span class="glyphicon  glyphicon-chevron-right"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+           <div class="boxed  push-down-45">
+
+            <!-- Featured image and meta start -->
+            <div class="meta">
+              <div class="row">
+                <div class="col-xs-12  col-sm-10  col-sm-offset-1">
+                  <div class="meta__container--without-image">
+                    <div class="row">
+                      <div class="col-xs-12  col-sm-8">
+<div class="meta__info">
+  <span class="meta__author"><img src="images/about/yigit_avatar.jpg" alt="Meta avatar" width="30" height="30"> <a href="/pages/yigit.html">H. Yiğit Güler</a>  in <a href="/category/yazilim.html">Yazılım</a> </span>
+  <span class="meta__date"><span class="glyphicon glyphicon-calendar"></span>  &nbsp; Sat 24 May 2014</span>
+</div>                      </div>
+                      <div class="col-xs-12  col-sm-4">
+                        <div class="meta__comments">
+                          <span class="glyphicon glyphicon-comment"></span>  &nbsp;
+                          <a href="single-post-without-image.html#disqus_thread"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Featured image and meta end -->
+            <!-- Start of the blogpost -->
+            <div class="row">
+              <div class="col-xs-10  col-xs-offset-1">
+
+                <!-- Start of the content -->
+                <div class="post-content--front-page">
+                  <h2 class="front-page-title">
+                    <a href="/djangocon-europe-2014.html">DjangoCon Europe 2014</a>
+                  </h2>
+                  <h3></h3>
+                    <p>Djangocon Europe bu yıl Fransa’nın Toulon kentinin yakınındaki Embiez adasında yapıldı.</p>
+<p>Bu sene orgnaizasyonu ikiye bölmüşler. Üç günlük konferans periyodu ile iki günlük sprint kısmını ayırmışlar.
+İki kısım da “her şey dahil” olarak düşünülmüş. Yani konferans katılımı, konaklama ve yemekler dahil. İstemeyen sprint’lere kalmayabiliyor.</p>
+<p><img src="images/django-eurocon-2014-marina.jpg" alt="Marina"/></p>
+<p>Tabii “her şey dahil” yaklaşımı organizasyon kolaylığı, herkesin bir arada olması gibi avantajlar yaratmakla beraber
+fiyat dezavantajı doğurmuş. Örneğin konferansın bileti tek başına satılıyor olsaydı, belki de bazı katılımcılar lüks
+bir otel yerine airbnb, hostel veya couchsurfing ile konaklayıp daha ucuz bir maliyetle katılabilirlerdi.
+İki gece-üç günlük bir konferans için 600€'luk bir maliyettense 200 € ya bu iş çözülebilirdi. Kalantor tayfa varsın Hilton’da kalsın.</p>
+<p>Gerçi yer seçimi ile zaten baştan bu ihtimallerin üzeri çizilmiş, çünkü adada alternatif bir konaklama imkanı yok.
+Bence django gibi açık kodlu bir platformun konferansına özellikle genç yazılımcıların katılması çok önemli.
+Ancak bu pahalı paket program nedeniyle konferansta tanıştığım hemen herkesi “şirketi göndermişti”.</p>
+<h2>Île des Embiez</h2>
+<p>Ada, Toulon’un six fours-les plages bölgesinde bulunuyor. Adından da anlaşılacağı üzere oldukça turistik bir bölgede.
+Etkinliğin yapıldığı tarihte deniz suyu sıcaklığı 17 derece olduğundan, henüz sezon başlamamıştı.
+Otobüs seferleri seyrek, yollar boş ve dükkanların yarısı kapalı idi.</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12832.833549393437!2d5.791382752978804!3d43.07754020230995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c900fc41ab5f4d%3A0x93e8837c4f5523a7!2s%C3%8Eles+des+Embiez!5e1!3m2!1str!2s!4v1401138253212" width="620" height="450" frameborder="0" style="border:0"></iframe>
+
+<p>Ada yüzyıllar boyunca bir tuzla olarak kullanılmış. Ardından <em>olağan olmayan patron</em> (un patron peu ordinaire) lakaplı
+Paul Ricard tarafından satın alınmış. Çok zengin bir doğa aşığı olan Ricard, adayı çorak bir düzlükten bir turizm merkezi haline çevirmiş.
+Adaya iki tane otel, 700 teknelik bir marina ve 200 e yakın ev, spor salonu, yaşam kampı vb.. yapmış.
+Ancak adanın doğası tamamen korunmuş, hatta iyileştirilmiş. Organik üzüm ve şarap üretimi yapılıyor olduğundan birkaç
+elektrikli görev aracı haricinde hiçbir taşıt giremiyor.</p>
+<p><img src="images/django-eurocon-2014-island.jpg" alt="Ada" /></p>
+<p>Burayı görünce biraz üzüldüm açıkçası. Ülkemizde Bozcaada veya Cunda gibi yüzıllardır yaşam sürülen ve kendi kendine oluşmuş
+yaşam alanlarının günde 10 feribot veya köprü ile arabaya boğulması, hatta imar planları değiştirilerek otele ve yoğun
+yaşama açıldığı gerçeği ile bu adadaki uyduruk iki ağacın üzerine titrenmesi durumu arasındaki tezat insanı derin düşüncelere itiyor.</p>
+<p>Paul Ricard’da kendi adasını evle doldurmayı, otele boğmayı bilirdi herhalde ama aradaki vizyon farkını nasıl,
+ne şekilde kapayacağız; kapattığımızda ortada bi ada kalacak mı vb. gibi sorular gereksiz yere moral bozuyor.</p>
+<p>Neyse, ada güzel, inşallah sezonunda da gezmek nasip olur. Konferansımıza dönelim.</p>
+<h2>Konferans</h2>
+<p>Ne demiştik, katılımcıların çoğu kalantor, Fransız ve Alman yazılımcılar çoğunlukta. Pazartesi güzel bir akşam yemeğinde,
+konferastaki tek Türkler olarak <a href="https://twitter.com/UstunOzgur">Üstün Özgür</a> ile beraber gözümüze güzel bir masa kestirip oturduk.
+Washington Post’un web sitesini geliştiren ekibin masasına oturmuşuz. Türküz dediğimiz an, türkiyeden bir gazetenin kendi
+sayfalarını birebir kopyladığını, yapan arkadaşı görürsek “selamlarını” iletmemizi istediler.</p>
+<p>Ertesi gün konferans başladı. Bu yazıda konuşmaların detaylarına girmek istemiyorum zira konuşmalar hakkında aldığım
+notları ayrı yazılarda paylaşacağım. Burada amacım genel havayı yansıtmak. Tüm konuşma listesine <a href="http://2014.djangocon.eu/talks/">buradan</a> ulaşabilirsiniz.</p>
+<p><img src="images/django-eurocon-2014-conf.jpg" alt="Konferans"/></p>
+<p>DjangoCon’da konuşma aralarında herkes birbiriyle tanışıyor, üzerinde çalıştığı projeleri anlatıyor. Neredeyse tüm organizasyon
+buna göre tasarlanmış. Kahve araları, yemekler çok çok uzun. Ben de üzerinde çalıştığımız prism projemizi gördüğüm herkese tanıttım.
+Bir yandan da İstanbul'daki python topluluğu olarak bir sonraki organizsyona talip olduğumuzu, fırsat verilirse organizasyonun
+altından çok güzel bir şekilde kalkabileceğimizi anlattım. Konuştuğum katılımcılar İstanbul konusunda çok heyecanlıydılar.
+Herkes İstanbul’u çok merak ediyor ve İstanbul'da bir konferans fikrine çok açık.</p>
+<p>Lakin “can güvenliği sıkıntısı olur mu?” diye soranların sayısı da azımsanmayacak kadar çoktu. Sıkıntı olmadığını belirtsek
+de, bir gece önce aynı masada yemek yediğimiz adamların şirketi, yani Washington Post’un twitter hesabından başbakan'ın danışmanınn
+iki kolu polis tarafından tutulmuş bir adama uçan tekme attığı görüntünün herkes tarafından görüldüğü bir ortamda bu verdiğimiz güven
+telkinleri ne derece etkili oldu bilemiyorum.</p>
+<p>Neyse, son gün resmi olarak gelecek seneyi istanbulda yapmak için başvurdum. Akşam üzeri de daha önceki iki senenin
+organizasyon komitesi ve django foundation yetkilileri ile birlikte masaya oturduk. Sorguya çekilir gibi, kimsin, nesin,
+ne yapıyorsun, kaç kişisiniz İstanbul'da, yapabilir misiniz gibi sorulara mantıklı ve yapabileceklerimiz ölçüsünde cevap verdim.</p>
+<h2>Django Eurocon 2015</h2>
+<p>Toplantının sonunda gelecek sene toplantını İngiltere’de yapılacağı bildirildi. Temel sebebi ingiltere’deki organizsyonu
+düzenleyecek arkadaş bu seneki toplantıda aktif görev almış ve “tecrübe kazanmış”. Ben de tebrik ettim kendisini ve
+gelecek senenin organizasyonunda görev alarak tecrübe kazanmak istediğimi belirttim. Sonuçlarını hep beraber göreceğiz.
+Eğer bu organizsyonu İstanbul’a kazandırabilirsek İstanbul'da djano ve python’a olan ilgiyi arttırabilir,
+hem de diğer django’cuları güzel bir şekilde ağırlayarak onlarla daha yakın olabiliriz.</p>
+<p>Sonuç olarak benim açımdan oldukça verimli bir toplantı oldu. Gelecek sene Cardiff’deki konferansa da gitmeyi planlıyorum.
+Umarım daha uygun bir fiyatla düzenlenir ve böylelikle daha çok insan katılabilir.</p>
+<p><img src="images/django-eurocon-2014-final.jpg" alt="Drawing"/></p>
+                </div>
+
+                <!-- End of the content -->
+                <a href="/djangocon-europe-2014.html">
+                  <div class="read-more">
+                    Continue reading
+                    <div class="read-more__arrow">
+                      <span class="glyphicon  glyphicon-chevron-right"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+            </ol><!-- /#posts-list -->
+<p class="paginator">
+    Page 1 / 1
+</p>
+            </section><!-- /#content -->
+        </div>
+      </div>
+    </div>
+    <footer class="copyrights">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12  col-sm-6">&copy; 2014
+          </div>
+          <div class="col-xs-12  col-sm-6">
+            <div class="copyrights--right">
+            <a href="http://blog.getpelican.com/">Pelican</a> ile yaratıldı.
+                &nbsp;
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/theme/js/main.js"></script>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'portuc'; // required: replace example with your forum shortname
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+  </body>
+</html>

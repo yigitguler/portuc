@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ProteusThemes">
+    <link rel="shortcut icon" href="../static/images/favicon.png">
+    <title>Readable - HTML Template</title>
+
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" href="../static/stylesheets/0a6f4577.0a6f4577.main.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+
+    <!-- Google Fonts -->
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: {
+          families: ['Open+Sans:300,400,700:latin', 'Lato:700,900:latin']
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+  </head>
+  <body>
+
+    <!-- header -->
+    <header class="header  push-down-45">
+      <div class="container">
+        <div class="logo  pull-left">
+          <a href="index.html">
+            <img src="../static/images/logo.png" alt="Logo" width="352" height="140">
+          </a> 
+        </div>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#readable-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+          </button>
+        </div>
+        <nav class="navbar  navbar-default" role="navigation">
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse  navbar-collapse" id="readable-navbar-collapse">
+            <ul class="navigation">
+              <li class="dropdown  active">
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a> 
+                <ul class="navigation__dropdown">
+                  <li> <a href="index.html">Home (Sidebar)</a>  </li>
+                  <li> <a href="home-slider.html">Home (Slider)</a>  </li>
+                  <li> <a href="home-multi-columns.html">Home (Multi Columns)</a>  </li>
+                  <li> <a href="home-ads.html">Home (With Ads)</a>  </li>
+                  <li> <a href="home-no-sidebar.html">Home (No Sidebar)</a>  </li>
+                  <li> <a href="home-full-width.html">Home (Full Width)</a>  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="single-post.html" class="dropdown-toggle" data-toggle="dropdown">Post formats</a> 
+                <ul class="navigation__dropdown">
+                  <li> <a href="single-post.html">Single Post</a>  </li>
+                  <li> <a href="single-post-without-image.html">Single Post (No Image)</a>  </li>
+                  <li> <a href="single-post-video.html">Single Post (Video)</a>  </li>
+                  <li> <a href="single-post-full-width.html">Single Post (Full Width Image)</a>  </li>
+                  <li> <a href="search-results.html">Search Results</a>  </li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="elements.html" class="dropdown-toggle" data-toggle="dropdown">Elements</a> 
+              </li>
+              <li class="">
+                <a href="features.html" class="dropdown-toggle" data-toggle="dropdown">Features</a> 
+              </li>
+              <li class="">
+                <a href="about-us.html" class="dropdown-toggle" data-toggle="dropdown">About</a> 
+              </li>
+              <li class="">
+                <a href="contact.html" class="dropdown-toggle" data-toggle="dropdown">Contact</a> 
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </nav>
+        <div class="hidden-xs  hidden-sm">
+          <a href="#" class="search__container  js--toggle-search-mode"> <span class="glyphicon  glyphicon-search"></span>  </a> 
+          <div class="social">
+            <a href="#" class="social__container"> <span class="glyphicon  glyphicon-heart"></span>  </a> 
+            <ul class="social__dropdown">
+              <li>
+                <a href="https://www.facebook.com/ProteusThemes" target="_blank" class="social__container"> <span class="zocial-facebook"></span>  </a> 
+              </li>
+              <li>
+                <a href="https://twitter.com/ProteusNetCom" target="_blank" class="social__container"> <span class="zocial-twitter"></span>  </a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Search - Open panel -->
+    <div class="search-panel">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <form action="search-results.html">
+              <input type="text" class="search-panel__form  js--search-panel-text" placeholder="Begin typing for search">
+              <p class="search-panel__text">Press enter to see results or esc to cancel.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider">
+      <div id="carousel-example-generic" class="carousel  slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item  active">
+            <img src="../static/images/420-slider/slider-image-2.jpg" alt="Slider">
+            <div class="carousel-caption">
+              <div class="slider__container">
+                <h3 class="slider__subtitle">We are not just bloggers</h3>
+                <h1 class="slider__title">We will change the world</h1>
+                <a href="http://themeforest.net/item/readable-blog-template-focused-on-readability/7499064?ref=ProteusThemes" class="btn  btn-primary">Buy Theme</a> &nbsp; &nbsp;
+                <a href="features.html" class="btn  btn-transparent">Read More</a> 
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="../static/images/420-slider/slider-image-1.jpg" alt="Slider">
+            <div class="carousel-caption">
+              <div class="slider__container">
+                <h3 class="slider__subtitle">We are not just bloggers</h3>
+                <h1 class="slider__title">We will change the world</h1>
+                <a href="http://themeforest.net/item/readable-blog-template-focused-on-readability/7499064?ref=ProteusThemes" class="btn  btn-primary">Buy Theme</a> &nbsp; &nbsp;
+                <a href="features.html" class="btn  btn-transparent">Read More</a> 
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="../static/images/420-slider/slider-image-3.jpg" alt="Slider">
+            <div class="carousel-caption">
+              <div class="slider__container">
+                <h3 class="slider__subtitle">We are not just bloggers</h3>
+                <h1 class="slider__title">We will change the world</h1>
+                <a href="http://themeforest.net/item/readable-blog-template-focused-on-readability/7499064?ref=ProteusThemes" class="btn  btn-primary">Buy Theme</a> &nbsp; &nbsp;
+                <a href="features.html" class="btn  btn-transparent">Read More</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left  carousel-control" href="#carousel-example-generic" data-slide="prev"> <span class="glyphicon  glyphicon-chevron-left"></span>  </a> 
+        <a class="right  carousel-control" href="#carousel-example-generic" data-slide="next"> <span class="glyphicon  glyphicon-chevron-right"></span>  </a> 
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12  col-md-8">
+
+          <!-- Post with featured image -->
+          <div class="boxed  push-down-45">
+
+            <!-- Featured image and meta start -->
+            <div class="meta">
+              <img class="wp-post-image" src="../static/images/dummy-licensed/blog-image.jpg" alt="Blog image" width="748" height="324">
+              <div class="meta__container">
+                <div class="row">
+                  <div class="col-xs-12  col-sm-8">
+                    <div class="meta__info">
+                      <span class="meta__author"><img src="../static/images/dummy/about-5.jpg" alt="Meta avatar" width="30" height="30"> <a href="#">Danielle Thatcher</a>  in <a href="#">News</a> </span> 
+                      <span class="meta__date"><span class="glyphicon glyphicon-calendar"></span>  &nbsp; 6. May, 2014</span> 
+                    </div>
+                  </div>
+                  <div class="col-xs-12  col-sm-4">
+                    <div class="meta__comments">
+                      <span class="glyphicon glyphicon-comment"></span>  &nbsp;
+                      <a href="single-post.html#disqus_thread"></a> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured image and meta end -->
+
+            <!-- Start of the blogpost -->
+            <div class="row">
+              <div class="col-xs-10  col-xs-offset-1">
+
+                <!-- Start of the content -->
+                <div class="post-content--front-page">
+                  <h2 class="front-page-title">
+                    <a href="single-post.html">Marks and devious Semikoli</a> 
+                  </h2>
+                  <h3>She had a last view back on the skyline of her hometown Bookmarksgrove. (H3)</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                </div>
+
+                <!-- End of the content -->
+                <a href="single-post.html">
+                  <div class="read-more">
+                    Continue reading
+                    <div class="read-more__arrow">
+                      <span class="glyphicon  glyphicon-chevron-right"></span> 
+                    </div>
+                  </div>
+                </a> 
+              </div>
+            </div>
+          </div>
+
+          <!-- Post with video -->
+          <div class="boxed  push-down-45">
+
+            <!-- Featured image and meta start -->
+            <div class="meta">
+              <div class="responsive-embed-video">
+
+                <!-- Embed Vimeo video -->
+                <img src="../static/images/dummy/video-placeholder.jpg" alt="Placeholder" class="vimeo-thumb" data-vimeo-id="79505580" data-width="748" />
+
+                <!-- Embed ends -->
+              </div>
+              <div class="row">
+                <div class="col-xs-12  col-sm-10  col-sm-offset-1">
+                  <div class="meta__container--without-image">
+                    <div class="row">
+                      <div class="col-xs-12  col-sm-8">
+                        <div class="meta__info">
+                          <span class="meta__author"><img src="../static/images/dummy/about-5.jpg" alt="Meta avatar" width="30" height="30"> <a href="#">Danielle Thatcher</a>  in <a href="#">News</a> </span> 
+                          <span class="meta__date"><span class="glyphicon glyphicon-calendar"></span>  &nbsp; 6. May, 2014</span> 
+                        </div>
+                      </div>
+                      <div class="col-xs-12  col-sm-4">
+                        <div class="meta__comments">
+                          <span class="glyphicon glyphicon-comment"></span>  &nbsp;
+                          <a href="single-post-video.html#disqus_thread"></a> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured image and meta end -->
+
+            <!-- Start of the blogpost -->
+            <div class="row">
+              <div class="col-xs-10  col-xs-offset-1">
+
+                <!-- Start of the content -->
+                <div class="post-content--front-page">
+                  <h2 class="front-page-title">
+                    <a href="single-post-video.html">Post with video</a> 
+                  </h2>
+                  <h3>She had a last view back on the skyline of her hometown Bookmarksgrove. (H3)</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                </div>
+
+                <!-- End of the content -->
+                <a href="single-post.html">
+                  <div class="read-more">
+                    Continue reading
+                    <div class="read-more__arrow">
+                      <span class="glyphicon  glyphicon-chevron-right"></span> 
+                    </div>
+                  </div>
+                </a> 
+              </div>
+            </div>
+          </div>
+
+          <!-- Post without featured image -->
+          <div class="boxed  push-down-45">
+
+            <!-- Meta without image start (Needed for WP theme)-->
+            <div class="meta">
+              <div class="row">
+                <div class="col-xs-12  col-sm-10  col-sm-offset-1">
+                  <div class="meta__container--without-image">
+                    <div class="row">
+                      <div class="col-xs-12  col-sm-8">
+                        <div class="meta__info">
+                          <span class="meta__author"><img src="../static/images/dummy/about-5.jpg" alt="Meta avatar" width="30" height="30"> <a href="#">Danielle Thatcher</a>  in <a href="#">News</a> </span> 
+                          <span class="meta__date"><span class="glyphicon glyphicon-calendar"></span>  &nbsp; 3. May, 2014</span> 
+                        </div>
+                      </div>
+                      <div class="col-xs-12  col-sm-4">
+                        <div class="meta__comments">
+                          <span class="glyphicon glyphicon-comment"></span>  &nbsp;
+                          <a href="single-post-without-image.html#disqus_thread"></a> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Meta without image end -->
+
+            <!-- Start of the blogpost -->
+            <div class="row">
+              <div class="col-xs-10  col-xs-offset-1">
+
+                <!-- Start of the content -->
+                <div class="post-content--front-page">
+                  <h2 class="front-page-title">
+                    <a href="single-post-without-image.html">Post without featured image</a> 
+                  </h2>
+                  <h3>She had a last view back on the skyline of her hometown Bookmarksgrove. (H3)</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                </div>
+
+                <!-- End of the content -->
+                <a href="single-post.html">
+                  <div class="read-more">
+                    Continue reading
+                    <div class="read-more__arrow">
+                      <span class="glyphicon  glyphicon-chevron-right"></span> 
+                    </div>
+                  </div>
+                </a> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12  col-md-4">
+          <div class="sidebar  boxed  push-down-30">
+            <div class="row">
+              <div class="col-xs-10  col-xs-offset-1">
+
+                <!-- Widget categories -->
+                <div class="widget-categories  push-down-30">
+                  <h6>Categories</h6>
+                  <ul>
+                    <li>
+                      <a href="#">Technology &nbsp; <span class="widget-categories__text">(16)</span>  </a> 
+                    </li>
+                    <li>
+                      <a href="#">User Interface design &nbsp; <span class="widget-categories__text">(13)</span>  </a> 
+                    </li>
+                    <li>
+                      <a href="#">User Experience &nbsp; <span class="widget-categories__text">(9)</span>  </a> 
+                    </li>
+                    <li>
+                      <a href="#">Startups &nbsp; <span class="widget-categories__text">(23)</span>  </a> 
+                    </li>
+                    <li>
+                      <a href="#">Reading &amp; Books &nbsp; <span class="widget-categories__text">(3)</span>  </a> 
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Widget featured post -->
+                <div class="widget-featured-post  push-down-30">
+                  <h6>Featured post</h6>
+                  <img src="../static/images/dummy-licensed/blog-image.jpg" alt="Featured post" width="293" height="127">
+                  <h4>
+                    <a href="single-post.html">Featured Author Post</a> 
+                  </h4>
+                  <p>Why ProteusThemes products is so much better than lorem everyone else's.</p>
+                </div>
+
+                <!-- Widget Facebook -->
+                <div class="widget-facebook  push-down-30">
+                  <h6>Facebook</h6>
+                  <div id="likebox-wrapper">
+
+                    <!--[if IE]>
+      <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fproteusthemes&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=false&amp;appId=685180284845706"
+        allowTransparency="true">
+      </iframe>
+    <![endif]-->
+
+                    <!--[if !IE]>-->
+                    <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fproteusthemes&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=false&amp;appId=685180284845706">
+                    </iframe>
+
+                    <!--<![endif]-->
+                  </div>
+                </div>
+
+                <!-- Widget posts -->
+                <div class="widget-posts  push-down-30">
+                  <h6>Popular / Recent</h6>
+
+                  <!-- Nav tabs -->
+                  <ul class="nav  nav-tabs">
+                    <li class="active">
+                      <a href="#recent-posts" data-toggle="tab"> <span class="glyphicon  glyphicon-time"></span>  &nbsp;Recent Posts </a> 
+                    </li>
+                    <li> <a href="#popular-posts" data-toggle="tab"> <span class="glyphicon  glyphicon-flash"></span>  &nbsp;Popular Posts </a>  </li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane  fade  in  active" id="recent-posts">
+                      <div class="push-down-15">
+                        <img src="../static/images/dummy-licensed/blog-image-small.jpg" alt="Posts">
+                        <h5>
+                          <a href="single-post.html">This is a showcase of the most recent posts</a> 
+                        </h5>
+                        <span class="widget-posts__time">19 hours ago</span> 
+                      </div>
+                      <div class="push-down-15">
+                        <img src="../static/images/dummy-licensed/blog-image-3-small.jpg" alt="Posts">
+                        <h5>
+                          <a href="single-post.html">This is a showcase of the most recent posts</a> 
+                        </h5>
+                        <span class="widget-posts__time">19 hours ago</span> 
+                      </div>
+                      <div class="push-down-15">
+                        <img src="../static/images/dummy-licensed/blog-image-small.jpg" alt="Posts">
+                        <h5>
+                          <a href="single-post.html">This is a showcase of the most recent posts</a> 
+                        </h5>
+                        <span class="widget-posts__time">19 hours ago</span> 
+                      </div>
+                    </div>
+                    <div class="tab-pane  fade" id="popular-posts">
+                      <div class="push-down-15">
+                        <img src="../static/images/dummy-licensed/blog-image-3-small.jpg" alt="Posts">
+                        <h5>
+                          <a href="single-post.html">This is a showcase of the most popular posts</a> 
+                        </h5>
+                        <span class="widget-posts__time">9 hours ago</span> 
+                      </div>
+                      <div class="push-down-15">
+                        <img src="../static/images/dummy-licensed/blog-image-small.jpg" alt="Posts">
+                        <h5>
+                          <a href="single-post.html">This is a showcase of the most popular posts</a> 
+                        </h5>
+                        <span class="widget-posts__time">12 hours ago</span> 
+                      </div>
+                      <div class="push-down-15">
+                        <img src="../static/images/dummy-licensed/blog-image-3-small.jpg" alt="Posts">
+                        <h5>
+                          <a href="single-post.html">This is a showcase of the most popular posts</a> 
+                        </h5>
+                        <span class="widget-posts__time">19 hours ago</span> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tags  widget-tags">
+                  <h6>Tags</h6>
+                  <hr>
+                  <a href="#" class="tags__link">Tech</a> 
+                  <a href="#" class="tags__link">Web</a> 
+                  <a href="#" class="tags__link">UI/UX</a> 
+                  <a href="#" class="tags__link">Tutorials</a> 
+                  <a href="#" class="tags__link">Workflow</a> 
+                </div>
+
+                <!-- Widget Twitter -->
+                <div class="widget-twitter  push-down-30">
+                  <h6>Twitter</h6>
+                  <a class="twitter-timeline" href="https://twitter.com/ProteusNetCom" data-widget-id="452057937674915840">Tweets by @ProteusNetCom</a> 
+                  <script>
+                    ! function(d, s, id) {
+                      var js, fjs = d.getElementsByTagName(s)[0],
+                        p = /^http:/.test(d.location) ? 'http' : 'https';
+                      if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                      }
+                    }(document, "script", "twitter-wjs");
+                  </script>
+                </div>
+                <div class="widget-recent-comments  push-down-30">
+                  <h6>Recent Comments</h6>
+                  <ul>
+                    <li>
+                      Mihael on
+                      <a href="single-post.html#comments">ProteusThemes and its products are great</a> 
+                      <br/>
+                    </li>
+                    <li>
+                      Jaka on
+                      <a href="single-post.html#comments">Readable is most readable WordPress theme out there</a> 
+                    </li>
+                    <li>
+                      Mihael on
+                      <a href="single-post.html#comments">Everybody loves Readable</a> 
+                    </li>
+                  </ul>
+                </div>
+                <div class="social-icons  widget-social-icons  push-down-30">
+                  <h6>Social Icons</h6>
+                  <a href="#" class="social-icons__container"> <span class="zocial-facebook"></span>  </a> 
+                  <a href="#" class="social-icons__container"> <span class="zocial-twitter"></span>  </a> 
+                  <a href="#" class="social-icons__container"> <span class="zocial-skype"></span>  </a> 
+                  <a href="#" class="social-icons__container"> <span class="zocial-youtube"></span>  </a> 
+                  <a href="#" class="social-icons__container"> <span class="zocial-reddit"></span>  </a> 
+                  <a href="#" class="social-icons__container"> <span class="zocial-wordpress"></span>  </a> 
+                  <a href="#" class="social-icons__container"> <span class="zocial-bitbucket"></span>  </a> 
+                  <a href="#" class="social-icons__container"> <span class="zocial-github"></span>  </a> 
+                  <a href="#" class="social-icons__container"> <span class="zocial-html5"></span>  </a> 
+                  <a href="#" class="social-icons__container"> <span class="zocial-meetup"></span>  </a> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="col-xs-12  col-md-3">
+          <div class="widget-about  push-down-30">
+            <img src="../static/images/logo.png" alt="Logo" width="176" height="70">
+            <br/>
+            <span class="footer__text">We focus on highly customizable, fast and optimized themes for variety of popular platform like WordPress and Magento.</span> 
+            <br/>
+            <br/>
+            <div class="social-icons  widget-social-icons">
+              <a href="#" class="social-icons__container"> <span class="zocial-facebook"></span>  </a> 
+              <a href="#" class="social-icons__container"> <span class="zocial-twitter"></span>  </a> 
+              <a href="#" class="social-icons__container"> <span class="zocial-youtube"></span>  </a> 
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12  col-md-3">
+          <div class="tags  widget-tags">
+            <h6>Tags</h6>
+            <hr>
+            <a href="#" class="tags__link">Tech</a> 
+            <a href="#" class="tags__link">Web</a> 
+            <a href="#" class="tags__link">UI/UX</a> 
+            <a href="#" class="tags__link">Tutorials</a> 
+            <a href="#" class="tags__link">Workflow</a> 
+          </div>
+        </div>
+        <div class="col-xs-12  col-md-3">
+          <nav class="widget-navigation  push-down-30">
+            <h6>Navigation</h6>
+            <hr>
+            <ul class="navigation">
+              <li> <a href="index.html">Home</a>  </li>
+              <li> <a href="single-post.html">Post Formats</a>  </li>
+              <li> <a href="elements.html">Elements</a>  </li>
+              <li> <a href="about-us.html">About</a>  </li>
+              <li> <a href="contact.html">Contact</a>  </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-xs-12  col-md-3">
+          <div class="widget-contact  push-down-30">
+            <h6>Contact Us</h6>
+            <hr>
+            <span class="widget-contact__text">
+        <span class="widget-contact__title">Readable Itd.</span> 
+            <br>Tehnološki park 19,
+            <br>1000 Ljubljana
+            <br>Slovenia
+            </span> 
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="copyrights">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12  col-sm-6">
+            <a href="http://themeforest.net/item/readable-blog-template-focused-on-readability/7499064?ref=ProteusThemes">Readable</a> HTML Template © Copyright 2014.
+          </div>
+          <div class="col-xs-12  col-sm-6">
+            <div class="copyrights--right">
+              Made by
+              <a href="http://proteusthemes.com" target="_blank">ProteusThemes</a> .
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../static/js/main.js"></script>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'readablehtml'; // required: replace example with your forum shortname
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+  </body>
+</html>
